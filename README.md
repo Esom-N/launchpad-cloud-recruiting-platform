@@ -108,6 +108,40 @@ README.md
 
 ---
 
+## Project Screenshots
+
+### Azure Resource Group
+
+Azure resources deployed for the Launchpad platform.
+
+![Azure Resource Group](images/resource-group.png)
+
+---
+
+### Azure SQL Database
+
+Azure SQL Database hosting the Launchpad relational database.
+
+![Azure SQL Database](images/azure-sql-database.png)
+
+---
+
+### Azure Blob Storage
+
+Blob Storage container used to store recruiting documents.
+
+![Azure Blob Storage](images/blob-storage.png)
+
+---
+
+### SQL Query Results
+
+Example query showing recruiting application data stored in Azure SQL Database.
+
+![SQL Query Results](images/sql-query-results.png)
+
+---
+
 ## Future Improvements
 
 - Azure Functions for automated deadline reminders
