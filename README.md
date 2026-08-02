@@ -104,9 +104,7 @@ Examples include:
 ## Project Structure
 
 ```markdown
-## Project Structure
 
-```text
 launchpad-cloud-recruiting-platform/
 
 ├── database/
