@@ -35,6 +35,7 @@ Azure SQL Database
  |
  v
 Azure Blob Storage
+```
 
 Azure SQL Database stores structured recruiting information:
 
@@ -125,7 +126,6 @@ launchpad-cloud-recruiting-platform/
 │   └── sql-query-results.png
 │
 └── README.md
-
 ```
 
 ---
