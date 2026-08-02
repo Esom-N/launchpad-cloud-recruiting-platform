@@ -1,4 +1,4 @@
-# Launchpad – Cloud Recruiting Management Platform
+# Launchpad Cloud Recruiting Platform
 
 ## Overview
 
@@ -23,26 +23,32 @@ Launchpad provides a centralized cloud solution that stores recruiting informati
 
 ## Solution Architecture
 
+The platform uses Microsoft Azure services to separate structured data storage from document storage.
+
 User
-↓
+|
+v
 Azure SQL Database
-↓
+|
+| Stores document metadata and Blob URLs
+|
+v
 Azure Blob Storage
 
-Azure SQL stores structured recruiting information such as:
+Azure SQL Database stores structured recruiting information:
 
 - Companies
 - Applications
 - Interviews
 - Skills
-- Documents (metadata)
+- Documents metadata
 
 Azure Blob Storage stores:
 
 - Resume PDFs
 - Job descriptions
 - Interview notes
-
+  
 ---
 
 ## Azure Services Used
@@ -97,12 +103,20 @@ Examples include:
 
 ```
 
-launchpad-cloud-recruiting-platform/
-
-database/
-docs/
-images/
-README.md
+├── database/
+│ ├── schema.sql
+│ ├── sample_data.sql
+│ └── queries.sql
+├── docs/
+│ ├── business_problem.md
+│ ├── requirements.md
+│ └── database_design.md
+├── images/
+│ ├── resource-group.png
+│ ├── azure-sql-database.png
+│ ├── blob-storage.png
+│ └── sql-query-results.png
+└── README.md
 
 ```
 
@@ -144,11 +158,12 @@ Example query showing recruiting application data stored in Azure SQL Database.
 
 ## Future Improvements
 
-- Azure Functions for automated deadline reminders
-- Email notifications
-- Web application frontend
-- Microsoft Entra authentication
-- Dashboard reporting
+Potential enhancements include:
+
+- Build a web interface for managing applications
+- Add Microsoft Entra ID authentication
+- Create analytics dashboards for recruiting insights
+- Add automated deadline notifications
 
 ---
 
