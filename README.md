@@ -25,14 +25,15 @@ Launchpad provides a centralized cloud solution that stores recruiting informati
 
 The platform uses Microsoft Azure services to separate structured data storage from document storage.
 
+```text
 User
-|
-v
+ |
+ v
 Azure SQL Database
-|
-| Stores document metadata and Blob URLs
-|
-v
+ |
+ | Stores document metadata and Blob URLs
+ |
+ v
 Azure Blob Storage
 
 Azure SQL Database stores structured recruiting information:
@@ -55,15 +56,15 @@ Azure Blob Storage stores:
 
 | Service | Purpose |
 |----------|---------|
-| Azure SQL Database | Store structured recruiting data |
-| Azure Blob Storage | Store recruiting documents |
+| Azure SQL Database | Stores structured recruiting data |
+| Azure Blob Storage | Stores recruiting documents |
 | Azure Resource Group | Organize cloud resources |
 
 ---
 
 ## Database Design
 
-The relational database consists of six tables:
+The relational database consists of six normalized tables:
 
 - Companies
 - Applications
@@ -103,20 +104,30 @@ Examples include:
 
 ```
 
+```markdown
+```text
+launchpad-cloud-recruiting-platform/
+
 ├── database/
-│ ├── schema.sql
-│ ├── sample_data.sql
-│ └── queries.sql
+│   ├── schema.sql
+│   ├── sample_data.sql
+│   └── queries.sql
+
 ├── docs/
-│ ├── business_problem.md
-│ ├── requirements.md
-│ └── database_design.md
+│   ├── business_problem.md
+│   ├── requirements.md
+│   └── database_design.md
+
 ├── images/
-│ ├── resource-group.png
-│ ├── azure-sql-database.png
-│ ├── blob-storage.png
-│ └── sql-query-results.png
+│   ├── resource-group.png
+│   ├── azure-sql-database.png
+│   ├── blob-storage.png
+│   └── sql-query-results.png
+
 └── README.md
+```
+```
+
 
 ```
 
