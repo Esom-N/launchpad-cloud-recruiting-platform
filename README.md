@@ -102,9 +102,9 @@ Examples include:
 
 ## Project Structure
 
-```
-
 ```markdown
+## Project Structure
+
 ```text
 launchpad-cloud-recruiting-platform/
 
@@ -112,22 +112,19 @@ launchpad-cloud-recruiting-platform/
 │   ├── schema.sql
 │   ├── sample_data.sql
 │   └── queries.sql
-
+│
 ├── docs/
 │   ├── business_problem.md
 │   ├── requirements.md
 │   └── database_design.md
-
+│
 ├── images/
 │   ├── resource-group.png
 │   ├── azure-sql-database.png
 │   ├── blob-storage.png
 │   └── sql-query-results.png
-
+│
 └── README.md
-```
-```
-
 
 ```
 
